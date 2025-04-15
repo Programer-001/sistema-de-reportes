@@ -1,22 +1,20 @@
 {
-    "compilerOptions": {
-      "target": "ES2020",                          // Asegura compatibilidad con características modernas
-      "module": "ESNext",                          // Para módulos modernos
-      "moduleResolution": "Bundler",               // Resolución moderna de módulos
-      "lib": [
-        "dom",                                    // Proporciona los tipos para el DOM
-        "esnext"                                  // Para características ECMAScript más recientes
-      ],
-      "jsx": "react-jsx",                          // Usar la sintaxis JSX moderna
-      "strict": true,                              // Habilita el modo estricto para detección de errores
-      "esModuleInterop": true,                     // Para permitir importaciones de módulos comunes
-      "skipLibCheck": true,                        // Evita la comprobación de tipos en las librerías para mejorar el rendimiento
-      "allowJs": true,                             // Permite archivos `.js` junto con `.ts` (útil en proyectos existentes)
-      "noImplicitAny": true,                       // Evita la inferencia implícita de tipo `any`
-      "resolveJsonModule": true                    // Permite importar archivos `.json` como módulos
-    },
-    "include": [
-      "src/**/*"                                   // Incluir todos los archivos dentro de src
-    ]
-  }
-  
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["dom", "esnext"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "build",     // 🧹 Evita archivos .js en src/
+    "rootDir": "src"       // 👈 Deja claro de dónde parte
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build"]
+}

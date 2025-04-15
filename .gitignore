@@ -1,0 +1,7 @@
+# Ignorar carpeta de compilación
+build/
+
+# Ignorar archivos JS generados
+*.js
+*.js.map
+
